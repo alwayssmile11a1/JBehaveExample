@@ -1,0 +1,36 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/story.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> user</div>
+<div class="element asA"><span class="keyword asA">I want to</span> perform an action</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I can achieve a business goal</div>
+</div>
+<div class="scenario">
+<h2>Scenario: find max of three numbers</h2>
+<div class="step successful">Given three numbers</div>
+<div class="step successful">When I enter three numbers a = 5, b = 6, c = <span class="step parameter">7</span></div>
+<div class="step successful">Then <span class="step parameter">7</span> is max of three numbers</div>
+</div>
+<div class="scenario">
+<h2>Scenario: find max of three numbers 2</h2>
+<div class="step successful">Given three numbers</div>
+<div class="step successful">When I enter three numbers a = 6, b = 6, c = <span class="step parameter">8</span></div>
+<div class="step successful">Then <span class="step parameter">8</span> is max of three numbers</div>
+</div>
+<div class="scenario">
+<h2>Scenario: find max of three numbers 3</h2>
+<div class="step successful">Given three numbers</div>
+<div class="step successful">When I enter three numbers a = 6, b = 6, c = <span class="step parameter">2</span></div>
+<div class="step failed">Then <span class="step parameter">2</span> is max of three numbers <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError</span></div>
+<pre class="failure">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at JBehaveTest.Steps.printMax(Steps.java:33)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:782)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:350)
+...</pre>
+</div>
+</div>
